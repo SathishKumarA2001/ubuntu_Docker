@@ -7,9 +7,7 @@ RUN mkdir test
 
 COPY ./docker_Essentials ./home/che
 WORKDIR /home/che
-RUN gcc -o /home/che/check /home/che/check.c
-RUN chmod +x /home/che/check
-
-VOLUME /home/che
-
-CMD [ "/home/che/check" ]
+#RUN gcc -o /home/che/check /home/che/check.c
+#RUN chmod +x /home/che/check
+#VOLUME /test 
+#CMD [ "/home/che/check" ]
